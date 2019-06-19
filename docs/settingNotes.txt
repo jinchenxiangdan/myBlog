@@ -1,0 +1,1 @@
+this is a .vuepress folder in this repo, using terminal to get in and setting
