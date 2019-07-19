@@ -25,7 +25,7 @@ module.exports = {
 			description: '我走得很慢，但我从不后退。'
 		}
 	},
-//Some people die at 25 and aren\'t buried until 75.
+//Some people die at 25 and aren't buried until 75.
 	themeConfig: {
 		locales: {
 			/**
@@ -245,7 +245,10 @@ function getLinuxSidebar(titleA, introductionA) {
 			collapsable: false,
 			sidebarDepth: 2,
 			children: [
-				['', introductionA]
+				['', introductionA],
+				'graphics-library',
+				'pi-driver',
+				'syscalls-and-ipc'
 			]
 		}
 	]
