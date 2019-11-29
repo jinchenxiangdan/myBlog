@@ -65,6 +65,8 @@ module.exports = {
 						]
 					},
 
+					{ text: 'Data Science', link: '/datascience/'},
+
 					{ text: 'About Me', link : '/aboutme/' },
 
 					{ text: 'Github', link: 'https://github.com/jinchenxiangdan' }
@@ -76,8 +78,9 @@ module.exports = {
 					'/linux/': getLinuxSidebar('Linux', 'Introduction'),
 					'/thoughts/': getThoughtsSidebar('Thoughts', 'Introduction'),
 					'/algorithm/sorting/': getSortingSidebar('Sorting', 'Introduction'),
-					'/algorithm/searching/': getSearchingSidebar('Searching', 'Intro'),
-					'/algorithm/datastructure/': getDataStructureSidebar('Data Structure', "Intro")
+					'/algorithm/searching/': getSearchingSidebar('Searching', 'Intro'),					
+					'/algorithm/datastructure/': getDataStructureSidebar('Data Structure', "Intro"),
+					'/datascience/': getDataScienceSiderbar('Data Science', 'Introduction')
 				},
 				lastUpdated: 'Last Updated'
 			},
@@ -148,7 +151,7 @@ function getNotesSideBar(titleA, introductionA) {
 	return [
 		{
 			title: titleA,
-			collapsable: false,
+			collapsable: true,
 			sidebarDepth: 1,
 			children: [
 				['', introductionA]
@@ -157,12 +160,14 @@ function getNotesSideBar(titleA, introductionA) {
 
 		{
 			title: "Git",
-			collapsable: false,
+			collapsable: true,
 			sidebarDepth: 1,
 			children: [
 				'git-push-deny'
 			]
 		}
+
+		
 
 	]
 
@@ -173,7 +178,7 @@ function getThoughtsSidebar(titleA, introductionA) {
 	return [
 		{
 			title: titleA,
-			collapsable: false,
+			collapsable: true,
 			sidebarDepth: 2,
 			children: [
 				['', introductionA]
@@ -188,7 +193,7 @@ function getSortingSidebar(titleA, introductionA) {
 	return [
 		{
 			title: titleA,
-			collapsable: false,
+			collapsable: true,
 			sidebarDepth: 2,
 			children: [
 				['', introductionA]
@@ -216,7 +221,7 @@ function getSearchingSidebar(titleA, introductionA) {
 	return [
 		{
 			title: titleA,
-			collapsable: false,
+			collapsable: true,
 			sidebarDepth: 2,
 			children: [
 				['', introductionA]
@@ -229,7 +234,7 @@ function getDataStructureSidebar(titleA, introductionA) {
 	return [
 		{
 			title: titleA,
-			collapsable: false,
+			collapsable: true,
 			sidebarDepth: 2,
 			children: [
 				['', introductionA]
@@ -242,13 +247,27 @@ function getLinuxSidebar(titleA, introductionA) {
 	return [
 		{
 			title: titleA,
-			collapsable: false,
+			collapsable: true,
 			sidebarDepth: 2,
 			children: [
 				['', introductionA],
 				'graphics-library',
 				'pi-driver',
 				'syscalls-and-ipc'
+			]
+		}
+	]
+}
+
+function getDataScienceSiderbar(titleA, introductionA) {
+	return [
+		{
+			title: titleA,
+			collapsable: true,
+			sidebarDepth: 1,
+			children: [
+				['', introductionA],
+				'treemap'
 			]
 		}
 	]
