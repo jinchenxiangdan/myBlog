@@ -65,6 +65,8 @@ module.exports = {
 						]
 					},
 
+					{ text: 'Data Science', link: '/datascience/'},
+
 					{ text: 'About Me', link : '/aboutme/' },
 
 					{ text: 'Github', link: 'https://github.com/jinchenxiangdan' }
