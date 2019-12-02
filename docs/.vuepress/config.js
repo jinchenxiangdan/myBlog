@@ -75,7 +75,7 @@ module.exports = {
 				displayAllHeaders: true,
 				sidebar: {
 					'/studyingnotes/': getNotesSideBar('Notes', 'Introduction'),
-					'/linux/': getLinuxSidebar('Linux', 'Introduction'),
+					'/linux/': getLinuxSidebar('Linux', 'Introduction', 'DeepLearning', 'IntroductionDL'),
 					'/thoughts/': getThoughtsSidebar('Thoughts', 'Introduction'),
 					'/algorithm/sorting/': getSortingSidebar('Sorting', 'Introduction'),
 					'/algorithm/searching/': getSearchingSidebar('Searching', 'Intro'),					
@@ -243,7 +243,7 @@ function getDataStructureSidebar(titleA, introductionA) {
 	]
 }
 
-function getLinuxSidebar(titleA, introductionA) {
+function getLinuxSidebar(titleA, introductionA, titleB, introductionB) {
 	return [
 		{
 			title: titleA,
@@ -254,6 +254,15 @@ function getLinuxSidebar(titleA, introductionA) {
 				'graphics-library',
 				'pi-driver',
 				'syscalls-and-ipc'
+			]
+		},
+		{
+			title: titleB,
+			collapsable: true,
+			sidebarDepth: 2,
+			children: [
+				['', introductionA],
+				'tesseract_ocr_training'
 			]
 		}
 	]
