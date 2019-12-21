@@ -1,3 +1,3 @@
-# This is Algorithm portion
+# This is Linux portion 
 
-To be Continue...
+It contains: linux kernel, Linux softwares
