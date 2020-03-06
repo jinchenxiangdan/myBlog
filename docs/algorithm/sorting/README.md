@@ -1,4 +1,16 @@
-# This is Sorting algorithm page
+## Sorting Algorithms 
+| Sorting Algorithm | Time Complex(Average) | Space Complex | isStable | isComplex |
+|:-----------------:|-----------------------|---------------|----------|-----------|
+| Insertion Sort    | O(n^2)                | O(1)          | Stable   | Simple    |
+| Shell Sort        | O(n^1.3)              | O(1)          | Unstable | Complex   |
+| Bubble Sort       | O(n^2)                | O(1)          | Stable   | Simple    |
+| Quick Sort        | O(nlog2(n)）          | O(log2(n))    | Unstable | Complex   |
+| Selection Sort    | O(n^2)                | O(1)          | Unstable | Complex   |
+| Stack Sort        | O(nlog2(n))           | O(1)          | Unstable | Complex   |
+| Merge Sort        | O(nlog2(n))           | O(n)          | Stable   | Complex   |
+| Radix Sort        | O(d(n+r))             | O(r)          | Stable   | Complex   |
+::: tip 
+- **Stable Algorithm**: A sorting algorithm is stable if two objects with euqal keys appera in the same order in sorted output as they appear in input array to be sorted.
+- **Complex Algorithm**: A complex algorithm is defined as an algorithm that embodies mathematical or logical methods and requires at least one thousand lines of the C programming language to implement. [Reference](https://mathblog.com/complex-algorithm-research-and-development-harder-than-many-think/)
 
-
-Still working on it 
+:::

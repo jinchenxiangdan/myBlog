@@ -288,7 +288,8 @@ function getDataScienceSiderbar(titleA, introductionA) {
 			sidebarDepth: 1,
 			children: [
 				['', introductionA],
-				'treemap'
+				'treemap',
+				'duplicate-file-checking'
 			]
 		}
 	]
