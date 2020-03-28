@@ -77,7 +77,7 @@ module.exports = {
 					'/studyingnotes/': getNotesSideBar('Notes', 'Introduction'),
 					'/linux/': getLinuxSidebar('Linux Kernel', 'Introduction', 
 												'DeepLearning', 'IntroductionDL'
-												,'General', '-I-'),
+												,'General', 'Linux General Problems'),
 					'/thoughts/': getThoughtsSidebar('Thoughts', 'Introduction'),
 					'/algorithm/sorting/': getSortingSidebar('Sorting', 'Introduction'),
 					'/algorithm/searching/': getSearchingSidebar('Searching', 'Intro'),					
@@ -274,7 +274,8 @@ function getLinuxSidebar(titleA, introductionA, titleB, introductionB, titleC, i
 			sidebarDepth: 1,
 			children: [
 				['', introductionC],
-				'ojs-setup'
+				'ojs-setup',
+				'apt-lock-error'
 			]
 		}
 	]

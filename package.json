@@ -11,5 +11,8 @@
   },
   "keywords": [],
   "author": "Shawn Jin",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "npm": "^6.14.4"
+  }
 }

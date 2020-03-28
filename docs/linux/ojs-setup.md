@@ -55,6 +55,8 @@ Apache/2.4.29 (Ubuntu)
 
 6. Then you can access it using your browser by accessing this address: http://localhost:8000
 
+## Run OJS with public IP
+To run OJS with public IP, you need to install OJS to apache2 folder and configure it. [How to configure apache2 with OJS?]()
 
 ## 3: Problems I've met
 
