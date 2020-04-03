@@ -14,7 +14,7 @@ Bachelor of Science in Computer Science
 
 <hr>
 
-#### Software Developer (Part-Time)     
+#### Software Developer   
 
 <p align="right"> *Oct 2019 - represnet* </p>
 

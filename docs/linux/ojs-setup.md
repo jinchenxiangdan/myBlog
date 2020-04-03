@@ -40,7 +40,7 @@ Apache/2.4.29 (Ubuntu)
 
    If you want to know more about chmod, run `man chomod` to read the guide. **chmod 777 is NOT recommended in this step!** 
 
-3. open your terminal and make sure the working directory is OJS directory. Then run command `php tools/install.php` to install it. During this step, just type the informations from console. If you want to change them after installation, you could directly edit the file `config.inc.php` to change or set additional configuration settings. 
+3. move the folder to your web server working space and open your terminal and make sure the working directory is OJS directory. Then run command `php tools/install.php` to install it. During this step, just type the informations from console. If you want to change them after installation, you could directly edit the file `config.inc.php` to change or set additional configuration settings. 
 
 4. install or update the dependencies by running command
 
@@ -75,7 +75,7 @@ Due to ( it's not safety because we directly store email account information int
 
     ::: tip
 
-    When using `-f` after `sendmail_path` in `php.ini`, the mail() function will use the parater after -f as sender email, or else, it will use `$additional_parameters` to send mail.
+    When using `-f` after `sendmail_path` in `php.ini`, the mail() function will use the parameter after -f as sender email, or else, it will use `$additional_parameters` to send mail.
 
     :::
 
@@ -83,7 +83,11 @@ Due to ( it's not safety because we directly store email account information int
 
   - [Solution] Then I've checked the [PHP Documentation - mail()](https://www.php.net/manual/en/function.mail.php) again. and finally, I found the mail() function doesn't support capital  characters in a email address. However, it support a email address with special punctuation symbols like `-` . So an email lie `Example@domain.com` doesn't work, but `example-two@domain.com` is a valid email address for this function.  But by default. the `default_envelope_sender` has capital characters. The OJS mail system works perfectly after I change it to valid email address. 
 
+- [**Solved**] [PHP Fatal errors] It's not efficient if you only install PHP. Other than that, you need to install `php-xml`, `php-mysql`(If you are going to use MySQL) and `php-mbstring`. 
+- [Solution] You could use command `sudo apt install php-mbstring php-xml php-mysql` on debain based system. 
 
+- [**Solved**] [Cannot log in database(MySQL)] If you are going to use MySQL 8.0+ you need to set MySQL to use MySQL native password to login.
+- [Solution] using root member to log in your database and type `'ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';`
 
 ## REFERENCES
 
