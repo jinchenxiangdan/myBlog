@@ -76,13 +76,13 @@ module.exports = {
 				sidebar: {
 					'/studyingnotes/': getNotesSideBar('Notes', 'Introduction'),
 					'/linux/': getLinuxSidebar('Linux Kernel', 'Introduction', 
-												'DeepLearning', 'IntroductionDL'
-												,'General', 'Linux General Problems'),
+												'General', 'Linux General Problems'),
 					'/thoughts/': getThoughtsSidebar('Thoughts', 'Introduction'),
 					'/algorithm/sorting/': getSortingSidebar('Sorting', 'Introduction'),
 					'/algorithm/searching/': getSearchingSidebar('Searching', 'Intro'),					
 					'/algorithm/datastructure/': getDataStructureSidebar('Data Structure', "Intro"),
-					'/datascience/': getDataScienceSiderbar('Data Science', 'Introduction')
+					'/datascience/': getDataScienceSiderbar('Data Science', 'Introduction',
+															'MachineLearning', 'IntroductionDL')
 				},
 				lastUpdated: 'Last Updated'
 			},
@@ -245,7 +245,7 @@ function getDataStructureSidebar(titleA, introductionA) {
 	]
 }
 
-function getLinuxSidebar(titleA, introductionA, titleB, introductionB, titleC, introductionC) {
+function getLinuxSidebar(titleA, introductionA, titleB, introductionB) {
 	return [
 		{
 			title: titleA,
@@ -259,21 +259,13 @@ function getLinuxSidebar(titleA, introductionA, titleB, introductionB, titleC, i
 
 			]
 		},
+
 		{
-			title: titleB,
-			collapsable: true,
-			sidebarDepth: 2,
-			children: [
-				['', introductionA],
-				'tesseract_ocr_training'
-			]
-		},
-		{
-			title : titleC,
+			title : titleB,
 			collapsable: true,
 			sidebarDepth: 1,
 			children: [
-				['', introductionC],
+				['', introductionB],
 				'ojs-setup',
 				'apt-lock-error'
 			]
@@ -281,7 +273,7 @@ function getLinuxSidebar(titleA, introductionA, titleB, introductionB, titleC, i
 	]
 }
 
-function getDataScienceSiderbar(titleA, introductionA) {
+function getDataScienceSiderbar(titleA, introductionA, titleB, introductionB) {
 	return [
 		{
 			title: titleA,
@@ -291,6 +283,15 @@ function getDataScienceSiderbar(titleA, introductionA) {
 				['', introductionA],
 				'treemap',
 				'duplicate-file-checking'
+			]
+		},
+		{
+			title: titleB,
+			collapsable: true,
+			sidebarDepth: 2,
+			children: [
+				['', introductionB],
+				'tesseract_ocr_training'
 			]
 		}
 	]
