@@ -84,10 +84,10 @@ Due to ( it's not safety because we directly store email account information int
   - [Solution] Then I've checked the [PHP Documentation - mail()](https://www.php.net/manual/en/function.mail.php) again. and finally, I found the mail() function doesn't support capital  characters in a email address. However, it support a email address with special punctuation symbols like `-` . So an email lie `Example@domain.com` doesn't work, but `example-two@domain.com` is a valid email address for this function.  But by default. the `default_envelope_sender` has capital characters. The OJS mail system works perfectly after I change it to valid email address. 
 
 - [**Solved**] [PHP Fatal errors] It's not efficient if you only install PHP. Other than that, you need to install `php-xml`, `php-mysql`(If you are going to use MySQL) and `php-mbstring`. 
-- [Solution] You could use command `sudo apt install php-mbstring php-xml php-mysql` on debain based system. 
+  - [Solution] You could use command `sudo apt install php-mbstring php-xml php-mysql` on debain based system. 
 
 - [**Solved**] [Cannot log in database(MySQL)] If you are going to use MySQL 8.0+ you need to set MySQL to use MySQL native password to login.
-- [Solution] using root member to log in your database and type `'ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';`
+  - [Solution] using root member to log in your database and type `'ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';`
 
 ## REFERENCES
 

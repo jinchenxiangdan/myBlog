@@ -3,6 +3,17 @@
 
 
 module.exports = {
+	plugins: [
+		[
+			'vuepress-plugin-mathjax',
+			{
+				target: 'svg',
+				macros: {
+					'*': '\\times',
+				},
+			},
+		],
+	],
 	title: '振祥的博客',
 	description: 'Shawn Jin\'s blog',
 	head: [ // the tags in html head
@@ -75,11 +86,11 @@ module.exports = {
 				displayAllHeaders: true,
 				sidebar: {
 					'/studyingnotes/': getNotesSideBar('Notes', 'Introduction'),
-					'/linux/': getLinuxSidebar('Linux Kernel', 'Introduction', 
+					'/linux/': getLinuxSidebar('Linux Kernel', 'Introduction',
 												'General', 'Linux General Problems'),
 					'/thoughts/': getThoughtsSidebar('Thoughts', 'Introduction'),
 					'/algorithm/sorting/': getSortingSidebar('Sorting', 'Introduction'),
-					'/algorithm/searching/': getSearchingSidebar('Searching', 'Intro'),					
+					'/algorithm/searching/': getSearchingSidebar('Searching', 'Intro'),
 					'/algorithm/datastructure/': getDataStructureSidebar('Data Structure', "Intro"),
 					'/datascience/': getDataScienceSiderbar('Data Science', 'Introduction',
 															'MachineLearning', 'IntroductionDL')
@@ -169,7 +180,7 @@ function getNotesSideBar(titleA, introductionA) {
 			]
 		}
 
-		
+
 
 	]
 
