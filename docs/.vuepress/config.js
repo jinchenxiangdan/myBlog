@@ -167,7 +167,8 @@ function getNotesSideBar(titleA, introductionA) {
 			collapsable: true,
 			sidebarDepth: 1,
 			children: [
-				['', introductionA]
+				['', introductionA],
+				['npm-error-permission']
 			]
 		},
 
@@ -195,6 +196,7 @@ function getThoughtsSidebar(titleA, introductionA) {
 			sidebarDepth: 2,
 			children: [
 				['', introductionA]
+
 			]
 		}
 	]

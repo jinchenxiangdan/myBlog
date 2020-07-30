@@ -1,3 +1,3 @@
 # This is my Notes portion
 
-XD
+It includes my Notes about npm, git, etc. 
