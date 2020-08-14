@@ -1,5 +1,5 @@
 // Author: Shawn Jin
-
+// This is the structure code of myblog 
 
 
 module.exports = {
@@ -171,7 +171,7 @@ function getNotesSideBar(titleA, introductionA) {
 				['npm-error-permission']
 			]
 		},
-
+		// Github notes
 		{
 			title: "Git",
 			collapsable: true,
@@ -179,14 +179,19 @@ function getNotesSideBar(titleA, introductionA) {
 			children: [
 				'git-push-deny'
 			]
+		},
+		// Python notes
+		{
+			title: "Python",
+			collapsable: true,
+			sidebarDepth: 1,
+			children: [
+				'python-modify-range-variable-in-for-loop'
+			]
 		}
-
-
-
 	]
-
-
 }
+
 
 function getThoughtsSidebar(titleA, introductionA) {
 	return [
@@ -232,6 +237,7 @@ function getSortingSidebar(titleA, introductionA) {
 	]
 }
 
+
 function getSearchingSidebar(titleA, introductionA) {
 	return [
 		{
@@ -245,6 +251,7 @@ function getSearchingSidebar(titleA, introductionA) {
 	]
 }
 
+
 function getDataStructureSidebar(titleA, introductionA) {
 	return [
 		{
@@ -257,6 +264,7 @@ function getDataStructureSidebar(titleA, introductionA) {
 		}
 	]
 }
+
 
 function getLinuxSidebar(titleA, introductionA, titleB, introductionB) {
 	return [
@@ -285,6 +293,7 @@ function getLinuxSidebar(titleA, introductionA, titleB, introductionB) {
 		}
 	]
 }
+
 
 function getDataScienceSiderbar(titleA, introductionA, titleB, introductionB) {
 	return [
