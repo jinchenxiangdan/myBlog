@@ -1,5 +1,5 @@
 // Author: Shawn Jin
-// This is the structure code of myblog 
+// This is the structure code of myblog
 
 
 module.exports = {
@@ -163,12 +163,12 @@ module.exports = {
 function getNotesSideBar(titleA, introductionA) {
 	return [
 		{
-			title: titleA,
+			// title: titleA,
 			collapsable: true,
 			sidebarDepth: 1,
 			children: [
 				['', introductionA],
-				['npm-error-permission']
+				'npm-error-permission'
 			]
 		},
 		// Github notes
@@ -187,6 +187,14 @@ function getNotesSideBar(titleA, introductionA) {
 			sidebarDepth: 1,
 			children: [
 				'python-modify-range-variable-in-for-loop'
+			]
+		},
+		{
+			title: "Vuepress",
+			collapsable: true,
+			sidebarDepth: 1,
+			children: [
+				'windows-configure-vuepress'
 			]
 		}
 	]
