@@ -15,3 +15,5 @@ To use bash on Windows, you need to [install subsystem for linux](https://docs.m
 
 ## reason
 The reason of that you need to configure subsystem is the script would run a bash script. When Windows is trying to run bash script, it would call the bash shell of subsystem. Thus, the script is going to use git from you subsystem not Windows even you running deploy command on powershell.
+
+<Valine></Valine>

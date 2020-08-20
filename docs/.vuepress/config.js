@@ -13,6 +13,34 @@ module.exports = {
 				},
 			},
 		],
+		// [
+		// 	'vuepress-plugin-comment',
+		// 	{
+		// 		// using leancloud to check the comment status 
+		// 		choosen: 'valine', 
+		// 		// options选项中的所有参数，会传给Valine的配置
+		// 		options: {
+		// 			// comment get in a 
+		// 			el: '#valine-vuepress-comment',
+		// 			appId: 'IJ9pWVxQ6BrmIp9aC0qB4ap6-gzGzoHsz',
+		// 			appKey: 'cWE6hFguV3argXBpcgWWkLpu',
+		// 			// comment setting 
+		// 			placeholder: 'leave a comment here..',
+		// 			avatar: 'retro',
+		// 			meta: ['nick', 'mail'],
+		// 			// visitor: 'true'
+		// 			lang: 'en'
+		// 			// 
+		// 			// path: '<%- frontmatter.commentid || frontmatter.permalink %>'
+		// 		}
+		// 	}
+		// ],
+		[
+			'@vuepress/register-components',
+			{
+				componentsDir: '.components'
+			}
+		]
 	],
 	title: '振祥的博客',
 	description: 'Shawn Jin\'s blog',
@@ -95,7 +123,13 @@ module.exports = {
 					'/datascience/': getDataScienceSiderbar('Data Science', 'Introduction',
 															'MachineLearning', 'IntroductionDL')
 				},
-				lastUpdated: 'Last Updated'
+				lastUpdated: 'Last Updated',
+				// close last/previse essay link
+				nextLinks: false,
+				prevLinks: false,
+				// logo of 
+				logo: './public/images/logo.png',
+				smoothScroll: true
 			},
 			/**
 			This is Simply Chinese version
@@ -148,7 +182,13 @@ module.exports = {
 					'/zh/algorithm/searching/': getSearchingSidebar('查找', '介绍'),
 					'/zh/algorithm/datastructure/': getDataStructureSidebar('数据结构', "介绍")
 				},
-				lastUpdated: '最近更新时间'
+				lastUpdated: '最近更新时间',
+				// close last/previse essay link
+				nextLinks: false,
+				prevLinks: false,
+				// logo of 
+				logo: './public/images/logo.png',
+				smoothScroll: true
 
 			}
 		}
