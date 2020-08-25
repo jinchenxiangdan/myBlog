@@ -4,37 +4,16 @@
 
 module.exports = {
 	plugins: [
-		[
-			'vuepress-plugin-mathjax',
-			{
-				target: 'svg',
-				macros: {
-					'*': '\\times',
-				},
-			},
-		],
 		// [
-		// 	'vuepress-plugin-comment',
+		// 	'vuepress-plugin-mathjax',
 		// 	{
-		// 		// using leancloud to check the comment status 
-		// 		choosen: 'valine', 
-		// 		// options选项中的所有参数，会传给Valine的配置
-		// 		options: {
-		// 			// comment get in a 
-		// 			el: '#valine-vuepress-comment',
-		// 			appId: 'IJ9pWVxQ6BrmIp9aC0qB4ap6-gzGzoHsz',
-		// 			appKey: 'cWE6hFguV3argXBpcgWWkLpu',
-		// 			// comment setting 
-		// 			placeholder: 'leave a comment here..',
-		// 			avatar: 'retro',
-		// 			meta: ['nick', 'mail'],
-		// 			// visitor: 'true'
-		// 			lang: 'en'
-		// 			// 
-		// 			// path: '<%- frontmatter.commentid || frontmatter.permalink %>'
-		// 		}
-		// 	}
+		// 		target: 'svg',
+		// 		macros: {
+		// 			'*': '\\times',
+		// 		},
+		// 	},
 		// ],
+
 		[
 			'@vuepress/register-components',
 			{
@@ -55,7 +34,7 @@ module.exports = {
 	locales: {
 		'/': {
 			lang: 'en-US',
-			title: 'Shawn Jin\'s blog',
+			title: 'aBloggey',
 			description: 'I am a slow walker, but I never walk back.'
 		},
 		'/zh/': {
@@ -64,11 +43,18 @@ module.exports = {
 			description: '我走得很慢，但我从不后退。'
 		}
 	},
-//Some people die at 25 and aren't buried until 75.
+
 	themeConfig: {
+		// close last/previse essay link
+		nextLinks: false,
+		prevLinks: false,
+		// logo of 
+		logo: '/images/logo2-removebg.png',
+		smoothScroll: true,
+
 		locales: {
 			/**
-			This is English version partion
+			English version partion
 			*/
 			'/': {
 				selectText: 'Select Language',
@@ -89,7 +75,6 @@ module.exports = {
 
 					{ text: 'Thoughts', link : '/thoughts/' },
 
-					// { text: 'Algorithm', link: '/algorithm/'},
 					{
 						text: 'Algorithm',
 						items:
@@ -123,16 +108,11 @@ module.exports = {
 					'/datascience/': getDataScienceSiderbar('Data Science', 'Introduction',
 															'MachineLearning', 'IntroductionDL')
 				},
-				lastUpdated: 'Last Updated',
-				// close last/previse essay link
-				nextLinks: false,
-				prevLinks: false,
-				// logo of 
-				logo: './public/images/logo.png',
-				smoothScroll: true
+				lastUpdated: 'Last Updated'
+
 			},
 			/**
-			This is Simply Chinese version
+			Simply Chinese version
 			*/
 			'/zh/': {
 				// 多语言下拉菜单的标题
@@ -196,19 +176,18 @@ module.exports = {
 };
 
 
-/**
+/************************************************************************************************************
  * These below are sidebar content
- */
+ ***********************************************************************************************************/
 
 function getNotesSideBar(titleA, introductionA) {
 	return [
 		{
-			// title: titleA,
+			title: titleA,
 			collapsable: true,
 			sidebarDepth: 1,
 			children: [
-				['', introductionA],
-				'npm-error-permission'
+				['',introductionA]
 			]
 		},
 		// Github notes
@@ -226,15 +205,18 @@ function getNotesSideBar(titleA, introductionA) {
 			collapsable: true,
 			sidebarDepth: 1,
 			children: [
-				'python-modify-range-variable-in-for-loop'
+				'python-modify-range-variable-in-for-loop',
+				'python_import_files'
 			]
 		},
+		// Vuepress notes 
 		{
 			title: "Vuepress",
 			collapsable: true,
 			sidebarDepth: 1,
 			children: [
-				'windows-configure-vuepress'
+				'windows-configure-vuepress',
+				'npm-error-permission'
 			]
 		}
 	]

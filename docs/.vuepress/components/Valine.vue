@@ -40,7 +40,8 @@ export default {
       visitor: true,
       avatar: 'mm',
       lang: 'en',
-      placeholder: 'write here'
+      placeholder: 'write here',
+      meta: ['nick', 'mail']
     });
   },
 }
