@@ -48,7 +48,7 @@ module.exports = {
 		// close last/previse essay link
 		nextLinks: false,
 		prevLinks: false,
-		// logo of 
+		// logo of
 		logo: '/images/logo2-removebg.png',
 		smoothScroll: true,
 
@@ -71,7 +71,7 @@ module.exports = {
 				nav: [
 					{ text: 'Notes', link: '/studyingnotes/' },
 
-					{ text: 'Linux', link: '/linux/' },
+					// { text: 'Linux', link: '/linux/' },
 
 					{ text: 'Thoughts', link : '/thoughts/' },
 
@@ -99,8 +99,8 @@ module.exports = {
 				displayAllHeaders: true,
 				sidebar: {
 					'/studyingnotes/': getNotesSideBar('Notes', 'Introduction'),
-					'/linux/': getLinuxSidebar('Linux Kernel', 'Introduction',
-												'General', 'Linux General Problems'),
+					// '/linux/': getLinuxSidebar('Linux Kernel', 'Introduction',
+					// 							'General', 'Linux General Problems'),
 					'/thoughts/': getThoughtsSidebar('Thoughts', 'Introduction'),
 					'/algorithm/sorting/': getSortingSidebar('Sorting', 'Introduction'),
 					'/algorithm/searching/': getSearchingSidebar('Searching', 'Intro'),
@@ -131,7 +131,7 @@ module.exports = {
 
 					{ text: '学习笔记', link: '/zh/studyingnotes/' },
 
-					{ text: 'Linux', link: '/zh/linux/' },
+					// { text: 'Linux', link: '/zh/linux/' },
 
 					{
 						text: '算法',
@@ -156,7 +156,7 @@ module.exports = {
 				displayAllHeaders: true,
 				sidebar: {
 					'/zh/studyingnotes/': getNotesSideBar('学习笔记', '目的'),
-					'/zh/linux/': getLinuxSidebar('Linux', 'Introduction'),
+					// '/zh/linux/': getLinuxSidebar('Linux', 'Introduction'),
 					'/zh/thoughts/': getThoughtsSidebar('想法', '介绍'),
 					'/zh/algorithm/sorting/': getSortingSidebar('排序', '介绍'),
 					'/zh/algorithm/searching/': getSearchingSidebar('查找', '介绍'),
@@ -166,7 +166,7 @@ module.exports = {
 				// close last/previse essay link
 				nextLinks: false,
 				prevLinks: false,
-				// logo of 
+				// logo of
 				logo: './public/images/logo.png',
 				smoothScroll: true
 
@@ -209,7 +209,7 @@ function getNotesSideBar(titleA, introductionA) {
 				'python_import_files'
 			]
 		},
-		// Vuepress notes 
+		// Vuepress notes
 		{
 			title: "Vuepress",
 			collapsable: true,
