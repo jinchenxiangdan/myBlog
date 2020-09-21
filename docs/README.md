@@ -14,8 +14,6 @@ features:
 
 footer: MIT Licensed | Copyright © 2019-present Shawn Jin
 ---
-
-
 ## TODOLIST
 
 - blog about python `__str__()`

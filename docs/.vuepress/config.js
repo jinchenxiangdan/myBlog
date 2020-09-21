@@ -1,7 +1,6 @@
 // Author: Shawn Jin
 // This is the structure code of myblog
 
-
 module.exports = {
 	plugins: [
 		// [
@@ -105,6 +104,7 @@ module.exports = {
 					'/algorithm/sorting/': getSortingSidebar('Sorting', 'Introduction'),
 					'/algorithm/searching/': getSearchingSidebar('Searching', 'Intro'),
 					'/algorithm/datastructure/': getDataStructureSidebar('Data Structure', "Intro"),
+					'/algorithm/other/': getOtherAlgorithmSidebar(),
 					'/datascience/': getDataScienceSiderbar('Data Science', 'Introduction',
 															'MachineLearning', 'IntroductionDL')
 				},
@@ -209,6 +209,15 @@ function getNotesSideBar(titleA, introductionA) {
 				'python_import_files'
 			]
 		},
+		// R notes
+		{
+			title: "R",
+			collapsable: true,
+			sidebarDepth: 1,
+			children: [
+				// { title: title }
+			]
+		},
 		// Vuepress notes
 		{
 			title: "Vuepress",
@@ -217,6 +226,27 @@ function getNotesSideBar(titleA, introductionA) {
 			children: [
 				'windows-configure-vuepress',
 				'npm-error-permission'
+			]
+		},
+		// linux
+		{
+			title: "Linux",
+			collapsable: true,
+			sidebarDepth: 1,
+			children: [
+				'apt-lock-error',
+				'ojs-setup'
+			]
+		},
+		// Reading notes
+		{
+			title: "Reading Notes",
+			collapsable: true,
+			sidebarDepth: 1,
+			children: [
+				// 'data-mining',
+				'interaction-design',
+				'organized-system'
 			]
 		}
 	]
@@ -251,12 +281,11 @@ function getSortingSidebar(titleA, introductionA) {
 			]
 		},
 
-		{
-			title: 'Analyzation',
-			children: [
-
-			]
-		},
+		// {
+		// 	title: 'Analyzation',
+		// 	children: [
+		// 	]
+		// },
 
 		{
 			title: 'Problems',
@@ -295,32 +324,17 @@ function getDataStructureSidebar(titleA, introductionA) {
 	]
 }
 
-
-function getLinuxSidebar(titleA, introductionA, titleB, introductionB) {
+function getOtherAlgorithmSidebar() {
 	return [
 		{
-			title: titleA,
-			collapsable: true,
-			sidebarDepth: 2,
-			children: [
-				['', introductionA],
-				'graphics-library',
-				'pi-driver',
-				'syscalls-and-ipc'
-
-			]
-		},
-
-		{
-			title : titleB,
+			title: 'Backtrack',
 			collapsable: true,
 			sidebarDepth: 1,
 			children: [
-				['', introductionB],
-				'ojs-setup',
-				'apt-lock-error'
+				'enumeration'
 			]
 		}
+
 	]
 }
 
@@ -328,16 +342,20 @@ function getLinuxSidebar(titleA, introductionA, titleB, introductionB) {
 function getDataScienceSiderbar(titleA, introductionA, titleB, introductionB) {
 	return [
 		{
+			// data science
 			title: titleA,
 			collapsable: true,
 			sidebarDepth: 1,
 			children: [
 				['', introductionA],
-				'treemap',
-				'duplicate-file-checking'
+				// 'treemap',
+				'duplicate-file-checking',
+				'data-mining'
+
 			]
 		},
 		{
+			// Machine Learning
 			title: titleB,
 			collapsable: true,
 			sidebarDepth: 2,
@@ -346,5 +364,32 @@ function getDataScienceSiderbar(titleA, introductionA, titleB, introductionB) {
 				'tesseract_ocr_training'
 			]
 		}
+		// ,{
+		// 	title: "Data Mining",
+		// 	collapsable: true,
+		// 	sidebarDepth: 1,
+		// 	children: [
+		// 		'data-mining',
+		// 		'interaction-design'
+		// 	]
+		// },
+		// {
+		// 	title: "Data Vazulization",
+		// 	collapsable: true,
+		// 	sidebarDepth: 1,
+		// 	children: [
+		// 		// 'data-mining',
+		// 		// 'interaction-design'
+		// 	]
+		// },
+		// {
+		// 	title: "Reading Notes",
+		// 	collapsable: true,
+		// 	sidebarDepth: 1,
+		// 	children: [
+		// 		'data-mining',
+		// 		'interaction-design'
+		// 	]
+		// }
 	]
 }

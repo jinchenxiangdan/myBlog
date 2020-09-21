@@ -1,6 +1,7 @@
 # Python modify range variable in for loop
 
 When I want to done a job like below, I noticed that python doesn't support modify range variable like java or c code.
+
 ```python
 # It supposed to be infinity loop
 for i in range(5):
@@ -17,6 +18,7 @@ i: 4
  ```
 
  The reason it Python doesn't care about the currenet value of i. It runs like linked list, and using `next` to iterate and finish the loop. Thus, this method doesn't support by Python. To do something like that, we can use a while loop like below.
+
  ```python
  i = 0
  while (i < 5):
