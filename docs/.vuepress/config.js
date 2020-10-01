@@ -34,12 +34,12 @@ module.exports = {
 		'/': {
 			lang: 'en-US',
 			title: 'aBloggey',
-			description: 'I am a slow walker, but I never walk back.'
+			description: 'I am not a creator of knowledge, I am just a porter of knowledge.'
 		},
 		'/zh/': {
 			lang: 'zh-CN',
 			title: '振祥的博客',
-			description: '我走得很慢，但我从不后退。'
+			description: '我不是知识的创造者，我只是知识的搬运工。'
 		}
 	},
 
@@ -216,6 +216,7 @@ function getNotesSideBar(titleA, introductionA) {
 			sidebarDepth: 1,
 			children: [
 				// { title: title }
+				'r-basic'
 			]
 		},
 		// Vuepress notes
