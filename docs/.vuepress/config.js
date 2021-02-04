@@ -1,18 +1,24 @@
 // Author: Shawn Jin
 // This is the structure code of myblog
 
-
 module.exports = {
 	plugins: [
+		// [
+		// 	'vuepress-plugin-mathjax',
+		// 	{
+		// 		target: 'svg',
+		// 		macros: {
+		// 			'*': '\\times',
+		// 		},
+		// 	},
+		// ],
+
 		[
-			'vuepress-plugin-mathjax',
+			'@vuepress/register-components',
 			{
-				target: 'svg',
-				macros: {
-					'*': '\\times',
-				},
-			},
-		],
+				componentsDir: '.components'
+			}
+		]
 	],
 	title: '振祥的博客',
 	description: 'Shawn Jin\'s blog',
@@ -27,20 +33,27 @@ module.exports = {
 	locales: {
 		'/': {
 			lang: 'en-US',
-			title: 'Shawn Jin\'s blog',
-			description: 'I am a slow walker, but I never walk back.'
+			title: 'aBloggey',
+			description: 'I am not a creator of knowledge, I am just a porter of knowledge.'
 		},
 		'/zh/': {
 			lang: 'zh-CN',
 			title: '振祥的博客',
-			description: '我走得很慢，但我从不后退。'
+			description: '我不是知识的创造者，我只是知识的搬运工。'
 		}
 	},
-//Some people die at 25 and aren't buried until 75.
+
 	themeConfig: {
+		// close last/previse essay link
+		nextLinks: false,
+		prevLinks: false,
+		// logo of
+		logo: '/images/logo2-removebg.png',
+		smoothScroll: true,
+
 		locales: {
 			/**
-			This is English version partion
+			English version partion
 			*/
 			'/': {
 				selectText: 'Select Language',
@@ -57,11 +70,10 @@ module.exports = {
 				nav: [
 					{ text: 'Notes', link: '/studyingnotes/' },
 
-					{ text: 'Linux', link: '/linux/' },
+					// { text: 'Linux', link: '/linux/' },
 
 					{ text: 'Thoughts', link : '/thoughts/' },
 
-					// { text: 'Algorithm', link: '/algorithm/'},
 					{
 						text: 'Algorithm',
 						items:
@@ -86,19 +98,21 @@ module.exports = {
 				displayAllHeaders: true,
 				sidebar: {
 					'/studyingnotes/': getNotesSideBar('Notes', 'Introduction'),
-					'/linux/': getLinuxSidebar('Linux Kernel', 'Introduction',
-												'General', 'Linux General Problems'),
+					// '/linux/': getLinuxSidebar('Linux Kernel', 'Introduction',
+					// 							'General', 'Linux General Problems'),
 					'/thoughts/': getThoughtsSidebar('Thoughts', 'Introduction'),
 					'/algorithm/sorting/': getSortingSidebar('Sorting', 'Introduction'),
 					'/algorithm/searching/': getSearchingSidebar('Searching', 'Intro'),
 					'/algorithm/datastructure/': getDataStructureSidebar('Data Structure', "Intro"),
+					'/algorithm/other/': getOtherAlgorithmSidebar(),
 					'/datascience/': getDataScienceSiderbar('Data Science', 'Introduction',
 															'MachineLearning', 'IntroductionDL')
 				},
 				lastUpdated: 'Last Updated'
+
 			},
 			/**
-			This is Simply Chinese version
+			Simply Chinese version
 			*/
 			'/zh/': {
 				// 多语言下拉菜单的标题
@@ -117,7 +131,7 @@ module.exports = {
 
 					{ text: '学习笔记', link: '/zh/studyingnotes/' },
 
-					{ text: 'Linux', link: '/zh/linux/' },
+					// { text: 'Linux', link: '/zh/linux/' },
 
 					{
 						text: '算法',
@@ -142,13 +156,19 @@ module.exports = {
 				displayAllHeaders: true,
 				sidebar: {
 					'/zh/studyingnotes/': getNotesSideBar('学习笔记', '目的'),
-					'/zh/linux/': getLinuxSidebar('Linux', 'Introduction'),
+					// '/zh/linux/': getLinuxSidebar('Linux', 'Introduction'),
 					'/zh/thoughts/': getThoughtsSidebar('想法', '介绍'),
 					'/zh/algorithm/sorting/': getSortingSidebar('排序', '介绍'),
 					'/zh/algorithm/searching/': getSearchingSidebar('查找', '介绍'),
 					'/zh/algorithm/datastructure/': getDataStructureSidebar('数据结构', "介绍")
 				},
-				lastUpdated: '最近更新时间'
+				lastUpdated: '最近更新时间',
+				// close last/previse essay link
+				nextLinks: false,
+				prevLinks: false,
+				// logo of
+				logo: './public/images/logo.png',
+				smoothScroll: true
 
 			}
 		}
@@ -156,19 +176,18 @@ module.exports = {
 };
 
 
-/**
+/************************************************************************************************************
  * These below are sidebar content
- */
+ ***********************************************************************************************************/
 
 function getNotesSideBar(titleA, introductionA) {
 	return [
 		{
-			// title: titleA,
+			title: titleA,
 			collapsable: true,
 			sidebarDepth: 1,
 			children: [
-				['', introductionA],
-				'npm-error-permission'
+				['',introductionA]
 			]
 		},
 		// Github notes
@@ -186,15 +205,49 @@ function getNotesSideBar(titleA, introductionA) {
 			collapsable: true,
 			sidebarDepth: 1,
 			children: [
-				'python-modify-range-variable-in-for-loop'
+				'python-modify-range-variable-in-for-loop',
+				'python_import_files'
 			]
 		},
+		// R notes
+		{
+			title: "R",
+			collapsable: true,
+			sidebarDepth: 1,
+			children: [
+				// { title: title }
+				'r-basic'
+			]
+		},
+		// Vuepress notes
 		{
 			title: "Vuepress",
 			collapsable: true,
 			sidebarDepth: 1,
 			children: [
-				'windows-configure-vuepress'
+				'windows-configure-vuepress',
+				'npm-error-permission'
+			]
+		},
+		// linux
+		{
+			title: "Linux",
+			collapsable: true,
+			sidebarDepth: 1,
+			children: [
+				'apt-lock-error',
+				'ojs-setup'
+			]
+		},
+		// Reading notes
+		{
+			title: "Reading Notes",
+			collapsable: true,
+			sidebarDepth: 1,
+			children: [
+				// 'data-mining',
+				'interaction-design',
+				'organized-system'
 			]
 		}
 	]
@@ -229,12 +282,11 @@ function getSortingSidebar(titleA, introductionA) {
 			]
 		},
 
-		{
-			title: 'Analyzation',
-			children: [
-
-			]
-		},
+		// {
+		// 	title: 'Analyzation',
+		// 	children: [
+		// 	]
+		// },
 
 		{
 			title: 'Problems',
@@ -273,32 +325,17 @@ function getDataStructureSidebar(titleA, introductionA) {
 	]
 }
 
-
-function getLinuxSidebar(titleA, introductionA, titleB, introductionB) {
+function getOtherAlgorithmSidebar() {
 	return [
 		{
-			title: titleA,
-			collapsable: true,
-			sidebarDepth: 2,
-			children: [
-				['', introductionA],
-				'graphics-library',
-				'pi-driver',
-				'syscalls-and-ipc'
-
-			]
-		},
-
-		{
-			title : titleB,
+			title: 'Backtrack',
 			collapsable: true,
 			sidebarDepth: 1,
 			children: [
-				['', introductionB],
-				'ojs-setup',
-				'apt-lock-error'
+				'enumeration'
 			]
 		}
+
 	]
 }
 
@@ -306,16 +343,20 @@ function getLinuxSidebar(titleA, introductionA, titleB, introductionB) {
 function getDataScienceSiderbar(titleA, introductionA, titleB, introductionB) {
 	return [
 		{
+			// data science
 			title: titleA,
 			collapsable: true,
 			sidebarDepth: 1,
 			children: [
 				['', introductionA],
-				'treemap',
-				'duplicate-file-checking'
+				// 'treemap',
+				'duplicate-file-checking',
+				'data-mining'
+
 			]
 		},
 		{
+			// Machine Learning
 			title: titleB,
 			collapsable: true,
 			sidebarDepth: 2,
@@ -324,5 +365,32 @@ function getDataScienceSiderbar(titleA, introductionA, titleB, introductionB) {
 				'tesseract_ocr_training'
 			]
 		}
+		// ,{
+		// 	title: "Data Mining",
+		// 	collapsable: true,
+		// 	sidebarDepth: 1,
+		// 	children: [
+		// 		'data-mining',
+		// 		'interaction-design'
+		// 	]
+		// },
+		// {
+		// 	title: "Data Vazulization",
+		// 	collapsable: true,
+		// 	sidebarDepth: 1,
+		// 	children: [
+		// 		// 'data-mining',
+		// 		// 'interaction-design'
+		// 	]
+		// },
+		// {
+		// 	title: "Reading Notes",
+		// 	collapsable: true,
+		// 	sidebarDepth: 1,
+		// 	children: [
+		// 		'data-mining',
+		// 		'interaction-design'
+		// 	]
+		// }
 	]
 }
