@@ -214,8 +214,7 @@ The values for an attribute, A, are normalized based on the **mean** and **stand
 
 Moving the decimal point of values of attribute to make sure that the maximum absolute value is smaller than 1. Generally, the range of decimal scaling normalization is (-1, 1)
 
+## REFERENCE
 
-
-## 
 
 <Valine></Valine>
