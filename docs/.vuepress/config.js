@@ -4,15 +4,17 @@
 module.exports = {
 	plugins: [
 		// [
-		// 	'vuepress-plugin-mathjax',
-		// 	{
-		// 		target: 'svg',
-		// 		macros: {
-		// 			'*': '\\times',
-		// 		},
-		// 	},
-		// ],
-
+		//       'vuepress-plugin-comment',
+		//       {
+		//         choosen: 'waline',
+		//         // options选项中的所有参数，会传给Valine的配置
+		//         options: {
+		//           el: '#waline-vuepress-comment',
+		//           appId: 'Your own appId',
+		//           appKey: 'Your own appKey'
+		//         }
+		//       }
+    // ],
 		[
 			'@vuepress/register-components',
 			{
