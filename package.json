@@ -13,8 +13,11 @@
   "author": "Shawn Jin",
   "license": "ISC",
   "dependencies": {
+    "leancloud-storage": "^4.10.0",
     "npm": "^6.14.4",
-    "vuepress-plugin-comment": "^0.7.3"
+    "valine": "^1.4.14",
+    "vuepress-plugin-comment": "^0.7.3",
+    "vuepress-plugin-valine": "^0.3.4"
   },
   "devDependencies": {
     "vuepress-plugin-mathjax": "^1.2.8"
