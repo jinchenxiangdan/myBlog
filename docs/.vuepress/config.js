@@ -198,7 +198,8 @@ function getNotesSideBar(titleA, introductionA) {
 			collapsable: true,
 			sidebarDepth: 1,
 			children: [
-				'git-push-deny'
+				'git-push-deny',
+				'refreash-git-ignore'
 			]
 		},
 		// Python notes
