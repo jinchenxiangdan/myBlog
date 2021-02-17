@@ -20,6 +20,7 @@
     "vuepress-plugin-valine": "^0.3.4"
   },
   "devDependencies": {
-    "vuepress-plugin-mathjax": "^1.2.8"
+    "vuepress-plugin-mathjax": "^1.2.8",
+    "vuepress-plugin-md-enhance": "^1.9.6"
   }
 }

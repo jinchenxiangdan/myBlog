@@ -20,7 +20,14 @@ module.exports = {
 			{
 				componentsDir: '.components'
 			}
-		]
+		],
+		[
+      "md-enhance",
+      {
+        // 配置选项
+				tex:true,
+      },
+    ],
 	],
 	title: '振祥的博客',
 	description: 'Shawn Jin\'s blog',
