@@ -1,6 +1,6 @@
 # This is README file for datasicence portion
 
-::: tip 0_0
+::: tip
 We are drowning in data, but starving for knowledge!
 :::
 
