@@ -1,6 +1,4 @@
 node_modules/
-docs/.vuepress/dist/
-package-lock.json
 .DS_Store
 .idea
 *.log
