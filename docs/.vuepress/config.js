@@ -3,6 +3,19 @@
 
 module.exports = {
 	plugins: [
+
+		[
+			'@vuepress/register-components',
+			{
+				componentsDir: '.components'
+			}
+		],
+		[
+      "md-enhance",
+      {
+				tex: true,
+      },
+    ],
 		// [
 		//       'vuepress-plugin-comment',
 		//       {
@@ -14,20 +27,7 @@ module.exports = {
 		//           appKey: 'Your own appKey'
 		//         }
 		//       }
-    // ],
-		[
-			'@vuepress/register-components',
-			{
-				componentsDir: '.components'
-			}
-		],
-		[
-      "md-enhance",
-      {
-        // 配置选项
-				tex:true,
-      },
-    ],
+		// ],
 	],
 	title: '振祥的博客',
 	description: 'Shawn Jin\'s blog',
@@ -59,6 +59,10 @@ module.exports = {
 		// logo of
 		logo: '/images/logo2-removebg.png',
 		smoothScroll: true,
+		// md-enhance
+		mdEnhance: {
+      tex: true,
+    },
 
 		locales: {
 			/**
