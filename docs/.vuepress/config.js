@@ -11,11 +11,12 @@ module.exports = {
 			}
 		],
 		[
-      "md-enhance",
-      {
+			"md-enhance",
+			{
 				tex: true,
-      },
-    ],
+				align: true,
+			},
+		],
 		// [
 		//       'vuepress-plugin-comment',
 		//       {
@@ -59,10 +60,6 @@ module.exports = {
 		// logo of
 		logo: '/images/logo2-removebg.png',
 		smoothScroll: true,
-		// md-enhance
-		mdEnhance: {
-      tex: true,
-    },
 
 		locales: {
 			/**
@@ -210,7 +207,8 @@ function getNotesSideBar(titleA, introductionA) {
 			sidebarDepth: 1,
 			children: [
 				'git-push-deny',
-				'refreash-git-ignore'
+				'refreash-git-ignore',
+				'ssh-add-failed'
 			]
 		},
 		// Python notes
