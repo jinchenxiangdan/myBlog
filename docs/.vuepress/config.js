@@ -14,6 +14,7 @@ module.exports = {
 			"md-enhance",
 			{
 				tex: true,
+				align: true,
 			},
 		],
 		// [
@@ -206,7 +207,8 @@ function getNotesSideBar(titleA, introductionA) {
 			sidebarDepth: 1,
 			children: [
 				'git-push-deny',
-				'refreash-git-ignore'
+				'refreash-git-ignore',
+				'ssh-add-failed'
 			]
 		},
 		// Python notes

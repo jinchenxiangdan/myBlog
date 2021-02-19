@@ -47,7 +47,7 @@ $ git config --global user.email email@example.com
 
 5. 保存之前复制的文件，保存，然后遍配置成功了。
 
-注： 如果还是不行，或者关机之后就不行的话，运行```ssh-add [file_path]```这里的file_path是你的私钥的绝对路径.
+注： 如果还是不行，或者关机之后就不行的话，运行```ssh-add [file_path]```这里的file_path是你的私钥的绝对路径. If you got error `Could not open a connection to your authentication agent.`, please check [this article](https://jinchenxiangdan.github.io/studyingnotes/ssh-add-failed.html).
 
 
 运行环境：
