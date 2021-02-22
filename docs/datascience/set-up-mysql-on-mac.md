@@ -47,14 +47,3 @@ We are connected using the `root` user, which should only be used for administra
 :::
 
 ### Adding users
-
-
-
-
-
-
-
-
-
-
-
