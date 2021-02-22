@@ -116,7 +116,8 @@ module.exports = {
 					'/algorithm/datastructure/': getDataStructureSidebar('Data Structure', "Intro"),
 					'/algorithm/other/': getOtherAlgorithmSidebar(),
 					'/datascience/': getDataScienceSiderbar('Data Science', 'Introduction',
-															'MachineLearning', 'IntroductionDL')
+																									'MachineLearning', 'IntroductionDL',
+																									'Database', 'Introduction')
 				},
 				lastUpdated: 'Last Updated'
 
@@ -170,7 +171,10 @@ module.exports = {
 					'/zh/thoughts/': getThoughtsSidebar('想法', '介绍'),
 					'/zh/algorithm/sorting/': getSortingSidebar('排序', '介绍'),
 					'/zh/algorithm/searching/': getSearchingSidebar('查找', '介绍'),
-					'/zh/algorithm/datastructure/': getDataStructureSidebar('数据结构', "介绍")
+					'/zh/algorithm/datastructure/': getDataStructureSidebar('数据结构', "介绍"),
+					'zh/datascience/': getDataScienceSiderbar('数据科学', 'Introduction',
+																									'机器学习', 'IntroductionDL',
+																									'数据库', 'Introduction')
 				},
 				lastUpdated: '最近更新时间',
 				// close last/previse essay link
@@ -352,7 +356,7 @@ function getOtherAlgorithmSidebar() {
 }
 
 
-function getDataScienceSiderbar(titleA, introductionA, titleB, introductionB) {
+function getDataScienceSiderbar(titleA, introductionA, titleB, introductionB, titleC, introductionC) {
 	return [
 		{
 			// data science
@@ -371,10 +375,20 @@ function getDataScienceSiderbar(titleA, introductionA, titleB, introductionB) {
 			// Machine Learning
 			title: titleB,
 			collapsable: true,
-			sidebarDepth: 2,
+			sidebarDepth: 1,
 			children: [
 				['', introductionB],
 				'tesseract_ocr_training'
+			]
+		},
+		{
+			// Database
+			title:titleC,
+			collapsable: true,
+			sidebarDepth: 1,
+			children: [
+				['', introductionC],
+				'set-up-mysql-on-mac'
 			]
 		}
 		// ,{
