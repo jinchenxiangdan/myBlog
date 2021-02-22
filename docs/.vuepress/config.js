@@ -363,7 +363,8 @@ function getDataScienceSiderbar(titleA, introductionA, titleB, introductionB) {
 				['', introductionA],
 				// 'treemap',
 				'duplicate-file-checking',
-				'data-mining'
+				'data-mining',
+				'distributions'
 
 			]
 		},
