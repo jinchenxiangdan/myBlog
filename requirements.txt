@@ -1,3 +1,0 @@
-vuepress
-valine
-vuepress-plugin-comment
