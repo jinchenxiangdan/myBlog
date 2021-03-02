@@ -379,7 +379,8 @@ function getDataScienceSiderbar(titleA, introductionA, titleB, introductionB, ti
 			sidebarDepth: 1,
 			children: [
 				['', introductionB],
-				'tesseract_ocr_training'
+				'tesseract_ocr_training',
+				'svm'
 			]
 		},
 		{
