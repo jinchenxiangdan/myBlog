@@ -70,7 +70,7 @@ The formula for Beta distribution is
 $$
 \frac{x^{\alpha-1}(1-x)^{\beta-1}}{B(\alpha, \beta)}
 $$
-Where $B(\alpha, \beta)= \frac {Gamma(\alpha)Gamma(\beta)}{Gamma(\alpha+\beta)}$
+Where $B(\alpha, \beta)= \frac {\Gamma(\alpha)\Gamma(\beta)}{\Gamma(\alpha+\beta)}$
 
 ## Cauchy Distribution
 

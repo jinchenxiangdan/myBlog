@@ -24,6 +24,7 @@
     "markdown-it": "^12.0.4",
     "vuepress": "^1.8.2",
     "vuepress-plugin-mathjax": "^1.2.8",
-    "vuepress-plugin-md-enhance": "^1.9.6"
+    "vuepress-plugin-md-enhance": "^1.9.6",
+    "webpack": "^5.24.2"
   }
 }
