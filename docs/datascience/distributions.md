@@ -9,12 +9,10 @@ In probability theory and statistics, a probability distribution is the mathemat
 ## Bernoulli Distribution
 Bernoulli experiments have two outcomes, 1: success and 0: failure. Random sampling from set $X$, success probability is $p$. The distribution function is $p^{x}(1-p)^{1-x}$ where $x\in (0,1)$. It also could be write as
 $$
-\begin{equation}
 P(x) = \begin{cases}
   1 - p & x = 0 \\
   p & x = 1
   \end{cases}
-\end{equation}
 $$
 In this case, the sum of probability must be 1.
 ## Uniform Distribution
