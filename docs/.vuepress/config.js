@@ -252,7 +252,8 @@ function getNotesSideBar(titleA, introductionA) {
 			sidebarDepth: 1,
 			children: [
 				'apt-lock-error',
-				'ojs-setup'
+				'ojs-setup',
+				'ssh-keep-thread'
 			]
 		},
 		// Reading notes

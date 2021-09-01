@@ -1,32 +1,31 @@
 {
-  "name": "VuepressBlog",
+  "name": "theme-vdoing-blog",
   "version": "1.0.0",
-  "description": "This is my blog",
-  "main": "index.js",
   "scripts": {
-    "start": "vuepress dev docs",
-    "build": "vuepress build docs",
     "dev": "vuepress dev docs",
-    "deploy": "bash deploy.sh"
+    "build": "vuepress build docs",
+    "deploy": "bash deploy.sh",
+    "editFm": "node utils/editFrontmatter.js",
+    "baiduPush": "node utils/baiduPush.js https://xugaoyi.com && bash baiduPush.sh",
+    "publish": "cd ./theme-vdoing && npm publish && cd ../ && npm run updateTheme",
+    "updateTheme": "npm uninstall vuepress-theme-vdoing && rm -rf node_modules && npm i && npm i vuepress-theme-vdoing -D"
   },
-  "keywords": [],
-  "author": "Shawn Jin",
-  "license": "ISC",
-  "dependencies": {
-    "leancloud-storage": "^4.10.0",
-    "npm": "^6.14.4",
-    "valine": "^1.4.14",
-    "vuepress-plugin-comment": "^0.7.3",
-    "vuepress-plugin-valine": "^0.3.4"
-  },
+  "license": "MIT",
   "devDependencies": {
-    "container": "^0.0.2",
-    "markdown-it": "^12.0.4",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "vuepress": "^1.8.2",
-    "vuepress-plugin-mathjax": "^1.2.8",
-    "vuepress-plugin-md-enhance": "^1.9.6",
-    "webpack": "^5.24.2"
+    "dayjs": "^1.9.7",
+    "inquirer": "^7.1.0",
+    "json2yaml": "^1.1.0",
+    "vuepress": "1.8.0",
+    "vuepress-plugin-baidu-autopush": "^1.0.1",
+    "vuepress-plugin-baidu-tongji": "^1.0.1",
+    "vuepress-plugin-demo-block": "^0.7.2",
+    "vuepress-plugin-one-click-copy": "^1.0.2",
+    "vuepress-plugin-thirdparty-search": "^1.0.2",
+    "vuepress-plugin-zooming": "^1.1.7",
+    "vuepress-theme-vdoing": "^1.8.3",
+    "yamljs": "^0.3.0"
+  },
+  "dependencies": {
+    "vuepress-plugin-comment": "^0.7.3"
   }
 }
