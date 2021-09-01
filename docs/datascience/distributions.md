@@ -1,3 +1,12 @@
+---
+title: distributions
+date: 1969-12-31 17:00:00
+permalink: /pages/6aae67/
+categories:
+  - datascience
+tags:
+  - 
+---
 # Distributions
 
 In probability theory and statistics, a probability distribution is the mathematical function that gives the probabilities of occurrence of different possible outcomes for an experiment. It is a mathematical description of a random phenomenon in terms of its sample space and the probabilities of events (subsets of the sample space). Every distribution has a [PDF(Probability density function)]([Probability density function - Wikipedia](https://en.wikipedia.org/wiki/Probability_density_function)) and [CDF(cumulative distribution function)]([Cumulative distribution function - Wikipedia](https://en.wikipedia.org/wiki/Cumulative_distribution_function)). A density function is improper if it cannot be normalized. 

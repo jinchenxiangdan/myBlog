@@ -1,3 +1,13 @@
+---
+title: 2-sorted-array-median
+date: 1969-12-31 17:00:00
+permalink: /pages/6afdca/
+categories:
+  - algorithm
+  - sorting
+tags:
+  - 
+---
 
 # 寻找两个升序数组的中位数
 

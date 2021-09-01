@@ -1,3 +1,13 @@
+---
+title: happy-number
+date: 1969-12-31 17:00:00
+permalink: /pages/754ff6/
+categories:
+  - algorithm
+  - searching
+tags:
+  - 
+---
 # Happy Number Checker
 
 ## What is a Happy Number?

@@ -1,3 +1,13 @@
+---
+title: distributions
+date: 1969-12-31 17:00:00
+permalink: /pages/452c76/
+categories:
+  - zh
+  - datascience
+tags:
+  - 
+---
 # Distributions
 
 ## Bernoulli Distribution

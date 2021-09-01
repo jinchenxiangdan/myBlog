@@ -1,3 +1,12 @@
+---
+title: data-mining
+date: 1969-12-31 17:00:00
+permalink: /pages/bd9266/
+categories:
+  - datascience
+tags:
+  - 
+---
 # Data mining
 
 ::: tip Definition

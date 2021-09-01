@@ -1,3 +1,14 @@
+---
+title: enumeration
+date: 1969-12-31 17:00:00
+permalink: /pages/14d169/
+categories:
+  - zh
+  - algorithm
+  - other
+tags:
+  - 
+---
 # Enumeration
 
 ## Problems that could be resloved

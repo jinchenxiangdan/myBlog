@@ -1,3 +1,13 @@
+---
+title: windows-configure-vuepress
+date: 1969-12-31 17:00:00
+permalink: /pages/0681da/
+categories:
+  - zh
+  - studyingnotes
+tags:
+  - 
+---
 # Set up and configure Vuepress on Windows 10
 
 To set up Vuepress as your blog, it is very easy on MacOS. You can just follow the [official guide](https://vuepress.vuejs.org/guide/).

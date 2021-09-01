@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /images/cartoon_icon.jpg
+# heroImage: /images/cartoon_icon.jpg
 heroText: Shawn's blog
 tagline: I am not a creator of knowledge, I am just a porter of knowledge.
 # actionText: 立刻进入 →

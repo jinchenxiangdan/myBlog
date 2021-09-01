@@ -1,3 +1,13 @@
+---
+title: python-modify-range-variable-in-for-loop
+date: 1969-12-31 17:00:00
+permalink: /pages/29f69e/
+categories:
+  - zh
+  - studyingnotes
+tags:
+  - 
+---
 # Python modify range variable in for loop
 
 When I want to done a job like below, I noticed that python doesn't support modify range variable like java or c code.

@@ -1,3 +1,13 @@
+---
+title: git-push-deny
+date: 1969-12-31 17:00:00
+permalink: /pages/ef89d4/
+categories:
+  - zh
+  - studyingnotes
+tags:
+  - 
+---
 # Git 提示push的时候没有权限
 <hr>
 

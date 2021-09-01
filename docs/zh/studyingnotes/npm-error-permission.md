@@ -1,3 +1,13 @@
+---
+title: npm-error-permission
+date: 1969-12-31 17:00:00
+permalink: /pages/ac88b3/
+categories:
+  - zh
+  - studyingnotes
+tags:
+  - 
+---
 # npm RACCES: permission denied
 
 When I run `npm run deploy` to deploy my blog, the error "Error: EACCES: permission denied" shows up. However, it doesn't recommend to run as super user. To resolve it, there is **two** ways to do it.

@@ -1,3 +1,12 @@
+---
+title: data-visualization
+date: 1969-12-31 17:00:00
+permalink: /pages/38600a/
+categories:
+  - datascience
+tags:
+  - 
+---
 # About Data Visualization
 
 ## Data visualization vs. Information Visulization

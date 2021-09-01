@@ -1,3 +1,13 @@
+---
+title: ojs-setup
+date: 1969-12-31 17:00:00
+permalink: /pages/e790bb/
+categories:
+  - zh
+  - studyingnotes
+tags:
+  - 
+---
 # Setting up OJS([Open Journal Systems]([https://pkp.sfu.ca/ojs/])) on Ubuntu 18.04
 
 

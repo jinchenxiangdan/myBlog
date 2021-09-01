@@ -1,3 +1,14 @@
+---
+title: 2-sorted-array-median
+date: 1969-12-31 17:00:00
+permalink: /pages/ea2577/
+categories:
+  - zh
+  - algorithm
+  - sorting
+tags:
+  - 
+---
 
 # 寻找两个升序数组的中位数
 

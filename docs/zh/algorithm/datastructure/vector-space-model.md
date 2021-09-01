@@ -1,3 +1,14 @@
+---
+title: vector-space-model
+date: 1969-12-31 17:00:00
+permalink: /pages/40b44a/
+categories:
+  - zh
+  - algorithm
+  - datastructure
+tags:
+  - 
+---
 # Vector space model 
 
 A document is represented as a vertor. It is a query, each vector holds a place for every term in the collection.

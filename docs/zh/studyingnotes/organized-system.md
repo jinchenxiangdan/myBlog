@@ -1,3 +1,13 @@
+---
+title: organized-system
+date: 1969-12-31 17:00:00
+permalink: /pages/3d8bfc/
+categories:
+  - zh
+  - studyingnotes
+tags:
+  - 
+---
 # Organization Systems
 
 ## Design Decisions in Organizing Systems

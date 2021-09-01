@@ -1,3 +1,13 @@
+---
+title: apt-lock-error
+date: 1969-12-31 17:00:00
+permalink: /pages/6212ef/
+categories:
+  - zh
+  - studyingnotes
+tags:
+  - 
+---
 # Could not get Lock error
 
 

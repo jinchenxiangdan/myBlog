@@ -1,3 +1,12 @@
+---
+title: set-up-mysql-on-mac
+date: 1969-12-31 17:00:00
+permalink: /pages/2a573c/
+categories:
+  - datascience
+tags:
+  - 
+---
 # MySQL installation and configuration
 
 ## MacOS

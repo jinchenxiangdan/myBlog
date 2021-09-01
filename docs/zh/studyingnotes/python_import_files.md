@@ -1,3 +1,13 @@
+---
+title: python_import_files
+date: 1969-12-31 17:00:00
+permalink: /pages/2b4dbe/
+categories:
+  - zh
+  - studyingnotes
+tags:
+  - 
+---
 # Python import files from different directories
 
 Python is a object-oriented language like java, so we could use a file to represent an object or something else. When we want to import files in Python, there are 3 cases that we need to concern and know how to deal with it.

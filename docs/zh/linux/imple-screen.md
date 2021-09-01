@@ -1,3 +1,13 @@
+---
+title: imple-screen
+date: 1969-12-31 17:00:00
+permalink: /pages/cbc67b/
+categories:
+  - zh
+  - linux
+tags:
+  - 
+---
 # Linux下使用framebuffer创建一个简单的图形库
 
 ::: tip 目的
