@@ -39,17 +39,17 @@ module.exports = [
     text: 'Data Science',
     link: '/data-science/',
     items: [
-      { text: 'Linear Algebra', link: '/data-science/9a7ee40fc232253e/' },
-      { text: 'Statistic', link: '/data-science/4c778760be26d8b3/' },
+      { text: 'Linear Algebra', link: '/data-science/linear-algobra/' },
+      { text: 'Statistic', link: '/data-science/statistic/' },
       { 
         text: 'Machine Learning', 
         link: '/data-science/machine-learning/',
         items: [
-          { text: 'Linear Modelling', link: '/data-science/machine-learning/linear-regression/' },
-          { text: 'Bayesian Approach to ML', link: '/data-science/machine-learning/linear-regression/' },
-          { text: 'Classification', link: '/data-science/machine-learning/linear-regression/' },
-          { text: 'Clustering', link: '/data-science/machine-learning/linear-regression/' },
-          { text: 'Nerual Networks', link: '/data-science/machine-learning/linear-regression/' },
+          { text: 'Linear Modelling', link: '/data-science/machine-learning/linear-modelling/' },
+          { text: 'Bayesian Approach to ML', link: '/data-science/machine-learning/bayesian-approach-to-ml/' },
+          { text: 'Classification', link: '/data-science/machine-learning/classification/' },
+          { text: 'Clustering', link: '/data-science/machine-learning/clustering/' },
+          { text: 'Nerual Networks', link: '/data-science/machine-learning/nerual-networks/' },
         ]
       },
     ],

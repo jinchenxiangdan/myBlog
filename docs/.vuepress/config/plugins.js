@@ -83,18 +83,18 @@ module.exports = [
     {
       choosen: 'gitalk',
       options: {
-        clientID: 'a6e1355287947096b88b',
-        clientSecret: 'f0e77d070fabfcd5af95bebb82b2d574d7248d71',
-        repo: 'blog-gitalk-comment', // GitHub 仓库
-        owner: 'xugaoyi', // GitHub仓库所有者
-        admin: ['xugaoyi'], // 对仓库有写权限的人
+        clientID: '2a603c6df30096d66db0',
+        clientSecret: 'c9a22ca56eea8b4de04571a672d3469139a9e91e',
+        repo: 'blog-comments', // GitHub 仓库
+        owner: 'jinchenxiangdan', // GitHub仓库所有者
+        admin: ['jinchenxiangdan'], // 对仓库有写权限的人
         // distractionFreeMode: true,
         pagerDirection: 'last', // 'first'正序 | 'last'倒序
         id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
-        title: '「评论」<%- frontmatter.title %>', // GitHub issue 的标题
+        title: '「Comments」<%- frontmatter.title %>', // GitHub issue 的标题
         labels: ['Gitalk', 'Comment'], // GitHub issue 的标签
         body:
-          '页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>', // GitHub issue 的内容
+          'Page：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>', // GitHub issue 的内容
       },
     },
   ],
