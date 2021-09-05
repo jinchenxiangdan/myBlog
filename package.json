@@ -1,6 +1,6 @@
 {
-  "name": "theme-vdoing-blog",
-  "version": "1.0.0",
+  "name": "Shawn-blog",
+  "version": "2.0.0",
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
@@ -26,6 +26,7 @@
     "yamljs": "^0.3.0"
   },
   "dependencies": {
-    "vuepress-plugin-comment": "^0.7.3"
+    "vuepress-plugin-comment": "^0.7.3",
+    "yarn": "^1.22.11"
   }
 }

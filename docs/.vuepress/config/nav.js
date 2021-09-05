@@ -6,17 +6,19 @@ module.exports = [
     link: '/notes/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
     items: [
       // 说明：以下所有link的值只是在相应md文件定义的永久链接（不是什么特殊生成的编码）。另外，注意结尾是有斜杠的
-      {
-        text: 'Algorithm',
-        items: [
-          { text: 'Sorting', link: '/algorithm/sorting/' },
-          { text: 'Searching', link: '/algorithm/searching/' },
-          { text: 'Data Structure', link: '/algorithm/data-structure/' }
-          // { text: 'Vue', link: '/pages/5d463fbdb172d43b/' },
-        ],
-      },
+      // {
+      //   text: 'Algorithm',
+      //   link: '/algorithm/',
+      //   items: [
+      //     { text: 'Sorting', link: '/algorithm/sorting/' },
+      //     { text: 'Searching', link: '/algorithm/searching/' },
+      //     { text: 'Data Structure', link: '/algorithm/data-structure/' }
+      //     // { text: 'Vue', link: '/pages/5d463fbdb172d43b/' },
+      //   ],
+      // },
       {
         text: 'Study Notes',
+        link: '/notes/',
         items: [
           { text: '《Statistic cookbook》', link: '/notes/javascript/' },
           { text: '《Java高级程序设计》', link: '/notes/js/' },
@@ -28,6 +30,7 @@ module.exports = [
   },
   {
     text: 'Algorithm',
+    link: '/algorithm/',
     items: [
       { text: 'Sorting', link: '/algorithm/sorting/' },
       { text: 'Searching', link: '/algorithm/searching/' },
@@ -65,7 +68,7 @@ module.exports = [
   //     { text: '友情链接', link: '/friends/' },
   //   ],
   // },
-  { text: 'About', link: '/about/' },
+  { text: 'About Me', link: '/about/about-me.md' },
   // {
   //   text: '收藏',
   //   link: '/pages/beb6c0bd8a66cea6/',
