@@ -1,12 +1,13 @@
 ---
 title: Learning Feedforward Nerual Network Through XOR
 date: 2020-10-28 17:00:00
-categories:
+categories: 
   - studyingnotes
-tags:
+tags: 
   - Data Science
   - Machine Learning
   - Neural Network
+permalink: /pages/1de17f/
 ---
 
 # Learning Feedforward Neural Network Through XOR
@@ -59,3 +60,52 @@ w=
 $$
 
 and $b = 0$.
+
+## How this model handle inputs
+
+Let input $X=\left[\begin{matrix}0 &0 \\ 0 & 1 \\ 1 & 0 \\ 1 & 1\end{matrix}\right]$, each raw represents a position. The first step of NN is multiply weight matrix, so
+$$
+XW=
+\left[
+\begin{matrix}
+0 & 0 \\
+1 & 1 \\
+1 & 1 \\
+2 & 2
+\end{matrix}
+\right]
+$$
+Then, adding bias $c$, the output is 
+$$
+\left[
+ \begin{matrix}
+	0  & -1\\
+	1 & 0\\
+	1 & 0\\
+	2 & 1
+  \end{matrix}
+  \right]
+$$
+After applying rectified linear transformation, we got
+$$
+\left[
+ \begin{matrix}
+	0  & 0\\
+	1 & 0\\
+	1 & 0\\
+	2 & 1
+  \end{matrix}
+  \right]
+$$
+At the end, we finish with multiplying by the weight vector $w$. the output would be
+$$
+\left[
+ \begin{matrix}
+	0  \\
+	1 \\
+	1 \\
+	0
+  \end{matrix}
+  \right]
+$$
+And the output is correct to every inputs.
