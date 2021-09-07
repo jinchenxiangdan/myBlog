@@ -1,5 +1,5 @@
 ---
-title: Learning Feedforward Nerual Network Through XOR
+title: Learning Feedforward Neural Network Through XOR
 date: 2020-10-28 17:00:00
 categories: 
   - studyingnotes
@@ -26,7 +26,7 @@ Previously, to describe a linear regression model, we used a vector of weights a
 
 We can now specify our complete network as
 
-$$f(x;W,c,w,b)=w^\top max\{0, W^\top x+c\}+b$$
+$$f(x;W,c,w,b)=w^\top max\{0, W^\top x+c\}+b$$, in this case, max function is a hidden layler.
 
 And we can then specify a solution to the XOR problem, let 
 $$
