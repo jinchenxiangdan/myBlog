@@ -38,7 +38,13 @@ module.exports = [
       ],
     },
   ],
-
+  [
+    "md-enhance",
+    {
+      tex: true,
+      align: true,
+    },
+  ],
   [
     'one-click-copy',
     {

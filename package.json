@@ -19,9 +19,9 @@
     "vuepress-plugin-baidu-autopush": "^1.0.1",
     "vuepress-plugin-baidu-tongji": "^1.0.1",
     "vuepress-plugin-demo-block": "^0.7.2",
+    "vuepress-plugin-md-enhance": "^1.20.1",
     "vuepress-plugin-one-click-copy": "^1.0.2",
     "vuepress-plugin-thirdparty-search": "^1.0.2",
-    
     "vuepress-theme-vdoing": "^1.8.3",
     "yamljs": "^0.3.0"
   },
