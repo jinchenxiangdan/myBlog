@@ -42,7 +42,7 @@ module.exports = [
     text: 'Data Science',
     link: '/data-science/',
     items: [
-      { text: 'Linear Algebra', link: '/data-science/linear-algobra/' },
+      { text: 'Linear Algebra', link: '/data-science/linear-algebra/' },
       { text: 'Statistic', link: '/data-science/statistic/' },
       { 
         text: 'Machine Learning', 
@@ -55,6 +55,7 @@ module.exports = [
           { text: 'Nerual Networks', link: '/data-science/machine-learning/nerual-networks/' },
         ]
       },
+      {text: 'Data Mining', link: '/data-science/data-mining/' },
     ],
   },
   // {
