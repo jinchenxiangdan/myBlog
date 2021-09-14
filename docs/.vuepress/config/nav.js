@@ -48,11 +48,12 @@ module.exports = [
         text: 'Machine Learning', 
         link: '/data-science/machine-learning/',
         items: [
+          { text: 'Linear Algebra', link: '/data-science/machine-learning/linear-algebra/' },
           { text: 'Linear Modelling', link: '/data-science/machine-learning/linear-modelling/' },
-          { text: 'Bayesian Approach to ML', link: '/data-science/machine-learning/bayesian-approach-to-ml/' },
-          { text: 'Classification', link: '/data-science/machine-learning/classification/' },
-          { text: 'Clustering', link: '/data-science/machine-learning/clustering/' },
-          { text: 'Nerual Networks', link: '/data-science/machine-learning/nerual-networks/' },
+          // { text: 'Bayesian Approach to ML', link: '/data-science/machine-learning/bayesian-approach-to-ml/' },
+          // { text: 'Classification', link: '/data-science/machine-learning/classification/' },
+          // { text: 'Clustering', link: '/data-science/machine-learning/clustering/' },
+          // { text: 'Nerual Networks', link: '/data-science/machine-learning/nerual-networks/' },
         ]
       },
       {text: 'Data Mining', link: '/data-science/data-mining/' },
